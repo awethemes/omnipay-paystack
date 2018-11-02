@@ -1,0 +1,23 @@
+{
+    "name": "awethemes/omnipay-paystack",
+    "type": "library",
+    "description": "Paystack gateway for Omnipay payment processing library",
+    "homepage": "https://github.com/awethemes/omnipay-paystack",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nguyen Van Anh",
+            "email": "anhskohbo@gmail.com"
+        }
+    ],
+    "require": {
+        "omnipay/common": "^3.0",
+        "yabacon/paystack-php": "^2.1"
+    },
+    "require-dev": {
+        "omnipay/tests": "^3.0"
+    },
+    "autoload": {
+        "psr-4": { "Omnipay\\Paystack\\" : "src/" }
+    }
+}
