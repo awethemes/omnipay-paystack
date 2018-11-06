@@ -13,7 +13,7 @@ class PurchaseRequest extends AbstractRequest
         $this->validate('amount', 'email');
 
         return [
-            'amount'       => $this->getAmount(),
+            'amount'       => $this->toAmount($this->getAmount()),
             'email'        => $this->getParameter('email'),
             'reference'    => $this->getTransactionReference(),
             'callback_url' => $this->getReturnUrl(),

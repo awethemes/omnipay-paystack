@@ -49,4 +49,15 @@ abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest
 
         return $this->paystack;
     }
+
+    /**
+     * Correct the amount.
+     *
+     * @param  float|string $value
+     * @return int
+     */
+    protected function toAmount($value)
+    {
+        return (int) round($value * 100);
+    }
 }
